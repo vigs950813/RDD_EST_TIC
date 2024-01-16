@@ -10,8 +10,11 @@
 	font-weight: bold;
 }
 
-ul .dropdown-menu{
+.dropdown-menu{
 	background-color: #DBE5E2;
+}
+
+.dropdown-item{
 	font-weight: bold;
 }
 
