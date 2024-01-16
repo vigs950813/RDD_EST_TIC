@@ -10,3 +10,8 @@
     background-color: red;
     color: black;
 }
+
+ul .dropdown-menu{
+	background-color: #DBE5E2;
+	font-weight: bold;
+}
