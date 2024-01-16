@@ -10,6 +10,10 @@
 	font-weight: bold;
 }
 
+.dropdown-menu{
+	background-color: #DBE5E2;
+}
+
 .btn{
 	background-color: #93C6B7;
 	color: black;
