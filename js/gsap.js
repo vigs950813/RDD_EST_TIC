@@ -23,7 +23,7 @@
  }
 
  // Asocia la función al clic de los botones con la clase 'btnAcordeon'
- const botonesAcordeon = document.querySelectorAll('.btnAcordeon');
+ const botonesAcordeon = document.querySelectorAll('.accordion-button');
  botonesAcordeon.forEach(function (boton) {
    boton.addEventListener('click', function () {
      transformarTexto(boton.id);
