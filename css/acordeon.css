@@ -18,6 +18,12 @@
     font-size: 20px;
 }
 
+.accordion-button:after{
+    background-color: #93C6B7;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 .accordion-body{
     font-size: 20px;
