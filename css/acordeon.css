@@ -12,6 +12,11 @@
     font-size: 20px;
 }
 
+.accordion-button:active{
+    background-color: #93C6B7;
+    color: black;
+}
+
 .accordion-button:focus{
     background-color: #93C6B7;
     color: black;
