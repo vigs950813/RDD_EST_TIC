@@ -12,19 +12,11 @@
     font-size: 20px;
 }
 
-.accordion-button:active{
+.accordion-button:focus{
     background-color: #93C6B7;
-    font-weight: bold;
-    font-size: 20px;
+    color: black;
 }
 
-.accordion-header::after{
-    background-color: #93C6B7;
-}
-
-.accordion-button:after{
-    background-color: #93C6B7;
-}
 
 
 .accordion-body{
