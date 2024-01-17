@@ -52,7 +52,7 @@
     <section>
       <div class="card">
         <h3 class="card-header">1.1.1 Definición de TIC</h3>
-        <div class="card-body">
+        <div class="card-body"> 
           <p class="card-text">
             Las Tecnologías de la Información y la Comunicación (TIC) se refieren al conjunto de tecnologías 
             relacionadas con el manejo y procesamiento de información, así como la comunicación a través de medios electrónicos. 
@@ -63,10 +63,57 @@
             Algunos de los componentes clave de las TIC incluyen:
           </p>
 
+          <!-- Acordeon -->
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Hardware
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body" id="miTexto">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <!-- Item 1 -->
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  Dispositivos físicos como computadoras, servidores, dispositivos de red y dispositivos de almacenamiento.
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+          </div>
+          <!-- Acordeon -->
+
           <p class="card-text">
             <ol class="card-text">
                 <li>
-                    <b>Hardware</b>: Dispositivos físicos como computadoras, servidores, dispositivos de red y dispositivos de almacenamiento.
+                    <b>Hardware</b>: 
                 </li>
                 <li>
                     <b>Software</b>: Programas y aplicaciones que se ejecutan en hardware, como sistemas operativos, aplicaciones de productividad, software de diseño, entre otros.
@@ -116,6 +163,12 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <!-- Core theme JS-->
+
+   <!-- GSSAP JS -->
+  <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.9.0/dist/TextPlugin.min.js"></script>
+  <script src="js/gsap.js"></script>
+  <!-- GSSAP JS -->
 </body>
 
 </html>
