@@ -3,11 +3,11 @@
 }
 
 .accordion-item{
-    background-color: #93C6B7;
+    background-color: #F3F3F3;
 }
 
 .accordion-header{
-    font-weight: bold;
+    background-color: #93C6B7;
     font-weight: bold;
     font-size: 22px;
 }
