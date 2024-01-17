@@ -1,3 +1,5 @@
+gsap.registerPlugin(TextPlugin)
+ 
  // Selecciona el elemento que deseas animar
  const miTexto = document.getElementById('miTexto');
 
