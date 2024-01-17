@@ -6,11 +6,12 @@
     background-color: #F3F3F3;
 }
 
-.accordion-header{
+.accordion-button{
     background-color: #93C6B7;
     font-weight: bold;
     font-size: 22px;
 }
+
 
 .accordion-body{
     font-size: 20px;
