@@ -4,7 +4,7 @@
 
 .offcanvas-title{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .offcanvas .btn-close{
@@ -18,15 +18,25 @@
 	font-weight: bold;
 }
 
+.offcanvas .btn:hover{
+	background-color: #5C7C72;
+	color: white;
+}
+
 .offcanvas .nav-a{
     font-size: 18px;
     text-decoration: none;
     color: black;
 }
 
+.offcanvas .nav-a:hover{
+    color: white;
+}
+
 .offcanvas .dropdown-item{
     font-size: 16px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 
