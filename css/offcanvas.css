@@ -7,21 +7,21 @@
     font-size: 16px;
 }
 
-.btn-close{
+.offcanvas .btn-close{
     background-color: red;
     color: black;
 }
 
-.btn-group>.btn{
-    width: 100px;
-    height: 40px;
+.offcanvas .nav-a{
+    font-size: 25px;
 }
 
-.dropdown-menu{
+
+.offcanvas .dropdown-menu{
 	background-color: #DBE5E2;
 }
 
-.dropdown-item{
+.offcanvas .dropdown-item{
     font-weight: bold;
     font-size: 14px;
 }
