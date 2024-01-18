@@ -12,8 +12,9 @@
     color: black;
 }
 
-.btn{
-    width: 100%;
+.btn-group>.btn{
+    width: 100px;
+    height: 40px;
 }
 
 .dropdown-menu{
