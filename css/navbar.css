@@ -19,9 +19,15 @@
 	font-size: 14px;
 }
 
+
 .navbar .btn{
 	background-color: #93C6B7;
 	color: black;
+}
+
+.navbar .btn:hover{
+	background-color: #5C7C72;
+	color: white;
 }
 
 .navbar .nav-a{
