@@ -16,13 +16,13 @@
 	background-color: #93C6B7;
 	color: black;
 	font-weight: bold;
-    align-content: left;
 }
 
 .offcanvas .nav-a{
     font-size: 14px;
     text-decoration: none;
     color: black;
+    text-align: justify;
 }
 
 .offcanvas .dropdown-item{
