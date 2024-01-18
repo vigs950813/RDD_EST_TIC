@@ -12,7 +12,13 @@
     color: black;
 }
 
-.offcanvas .nav-a{
+.offcanvas .btn{
+	background-color: #93C6B7;
+	color: black;
+	font-weight: bold;
+}
+
+.offcanvas .dropdown-item{
     font-size: 14px;
     text-decoration: none;
 }
