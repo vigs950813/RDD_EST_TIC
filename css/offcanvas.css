@@ -12,6 +12,10 @@
     color: black;
 }
 
+.btn{
+    width: 100%;
+}
+
 .dropdown-menu{
 	background-color: #DBE5E2;
 }
