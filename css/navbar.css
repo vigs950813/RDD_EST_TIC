@@ -30,8 +30,8 @@
 	color: white;
 }
 
-.navbar .nav-item>.btn{
-	width: 30px;
+.nav-item>.btn{
+	width: 100%;
 }
 
 .navbar .nav-a{
