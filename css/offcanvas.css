@@ -22,7 +22,7 @@
     font-size: 14px;
     text-decoration: none;
     color: black;
-    text-align: justify;
+    margin: 0;
 }
 
 .offcanvas .dropdown-item{
