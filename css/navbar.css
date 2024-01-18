@@ -10,21 +10,21 @@
 	font-weight: bold;
 }
 
-.dropdown-menu{
+.navbar .dropdown-menu{
 	background-color: #DBE5E2;
 }
 
-.dropdown-item{
+.navbar .dropdown-item{
 	font-weight: bold;
 	font-size: 14px;
 }
 
-.btn{
+.navbar .btn{
 	background-color: #93C6B7;
 	color: black;
 }
 
-.nav-a{
+.navba r.nav-a{
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: bold;
@@ -32,7 +32,7 @@
 }
 
 
-.nav-a:hover{
+.navbar .nav-a:hover{
 	color: white;
 	text-decoration: none;
 }
