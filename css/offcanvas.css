@@ -18,6 +18,11 @@
 	font-weight: bold;
 }
 
+.offcanvas .nav-a{
+    font-size: 14px;
+    text-decoration: none;
+}
+
 .offcanvas .dropdown-item{
     font-size: 14px;
     text-decoration: none;
