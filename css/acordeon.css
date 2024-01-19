@@ -7,16 +7,17 @@
 }
 
 .accordion-button{
-    background-color: #93C6B7;
+    background-color: #AED4C9;
     font-weight: bold;
     font-size: 14px;
 }
 
 
-.accordion-button:focus{
-    background-color: #93C6B7;
-    color: black;
+.accordion-button:hover{
+    background-color: #4A635B;
+    color: white;
 }
+
 
 
 
