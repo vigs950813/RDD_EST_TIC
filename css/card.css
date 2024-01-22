@@ -17,6 +17,14 @@
     background-color: #F3F3F3;
 }
 
+.card-img-top{
+    background-color: #D2D8D6;
+}
+
+.card-img-top:hover{
+    background-color: #778A84;
+}
+
 
 .card-text{
     font-size: 14px;
