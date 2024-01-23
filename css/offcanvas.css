@@ -38,11 +38,13 @@
     font-size: 14px;
     text-decoration: none;
     font-weight: bold;
+    color: white;
+    background-color: #5C7C72;
 }
 
 .offcanvas .dropdown-item:hover{
-    background-color: #5C7C72;
-    color: white;
+    background-color: #C2CECA;
+    color: black;
 }
 
 
