@@ -1,8 +1,4 @@
 
-#btnWidth{
-	width: 100%;
-}
-
 .navbar{
 	background-color: #6E9589;
 	margin-top: 1px;
@@ -34,6 +30,10 @@
 	color: white;
 }
 
+
+.nav-item>button{
+	width: 100%;
+}
 
 
 .navbar .nav-a{
