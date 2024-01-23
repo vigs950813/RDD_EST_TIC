@@ -15,7 +15,3 @@ $(document).ready(function () {
         $('#' + target).html($('#' + draggedItem).text());
     });
 });
-
-function validarRespuestas() {
-    alert(`hola`);
-}
