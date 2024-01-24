@@ -31,6 +31,18 @@
 <script src="../js/offcanvasLoader.js"></script>
 <script src="../js/footerPagesLoader.js"></script>
 <!-- Local JS-->
+<style>
+    .draggable-item {
+        cursor: grab;
+        font-weight: bold;
+    }
+    
+    .droppable-area {
+        min-height: 50px;
+        margin-bottom: 10px;
+        background-color: #D5D5D5;
+    }
+</style>
 </head>
 
 <body>
@@ -56,11 +68,16 @@
                 <div class="card-body">
 
                     <p class="card-text">
-                        En construcción
+                        <b>Instrucciones</b>
+                    </p>
+
+                    <p class="card-text">
+                        Correlaciona las preguntas con la relación de respuestas arrastrando los conceptos del apartado de Item al apartado de Respuesta que consideres correcto.
                     </p>
 
 
                     <div class="container">
+                        <!-- Fila -->
                         <div class="row">
                             <div class="col">
                                 <b>Pregunta</b>
@@ -72,78 +89,102 @@
                                 <b>Item</b>
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
                             <div class="col" id="pregunta1">
                                 Acceso a una amplia variedad de recursos educativos en línea, facilitando la preparación de materiales de enseñanza
                             </div>
-                            <div class="col" id="respuesta1" droppable="true">
+                            <div class="col droppable-area" id="respuesta1" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                             <div class="col">
-                                <div class="draggable-item" draggable="true" id="item1">Item 1</div>
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item1">Recursos educativos en línea</div>
+                                
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
                             <div class="col" id="pregunta2">
                                 Algunos profesores y estudiantes pueden no tener acceso equitativo a dispositivos y conectividad, generando desigualdades en el aprendizaje
                             </div>
-                            <div class="col" id="respuesta2" droppable="true">
-                                
+                            <div class="col droppable-area" id="respuesta2" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                             <div class="col">
-                                <div class="draggable-item" draggable="true" id="item2">Item 2</div>
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item2">Brecha digital</div>
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
                             <div class="col" id="pregunta3">
                                 Evaluaciones en línea y herramientas educativas proporcionan retroalimentación rápida, permitiendo a los profesores abordar áreas problemáticas de inmediato.
                             </div>
-                            <div class="col" id="respuesta3" droppable="true">
+                            <div class="col droppable-area" id="respuesta3" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 
                             </div>
                             <div class="col">
-                                <div class="draggable-item" draggable="true" id="item3">Item 4</div>
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item3">Feedback rápido</div>
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
                             <div class="col" id="pregunta4">
                                 Puede afectar la capacidad de los profesores para enseñar sin asistencia tecnológica
                             </div>
-                            <div class="col" id="respuesta4" droppable="true">
+                            <div class="col droppable-area" id="respuesta4" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 
                             </div>
                             <div class="col">
-                                <div class="draggable-item" draggable="true" id="item5">Item 5</div>
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item4">Dependencia tecnológica</div>
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
                             <div class="col" id="pregunta5">
                                 Las TIC brindan oportunidades para la incorporación de enfoques pedagógicos innovadores y herramientas interactivas.
                             </div>
-                            <div class="col" id="respuesta5" droppable="true">
+                            <div class="col droppable-area" id="respuesta5" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 
                             </div>
                             <div class="col">
-                                <div class="draggable-item" draggable="true" id="item6">Item 6</div>
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item5">Innovación de la enseñanza</div>
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
                             <div class="col" id="pregunta6">
                                 Evaluar habilidades y conocimientos en entornos digitales puede ser más complejo, y la posibilidad de trampas o plagio puede aumentar
                             </div>
-                            <div class="col" id="respuesta6" droppable="true">
+                            <div class="col droppable-area" id="respuesta6" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 
                             </div>
                             <div class="col">
-                                <div class="draggable-item" draggable="true" id="item7">Item 7</div>
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item6">Desafíos de evaluación</div>
                             </div>
-                        </div>                        
-                            <button type="button" onclick="validarRespuestas()" class="btn btn-primary">Validar respuestas</button>
+                        </div>
+                        <!-- Fila -->
+                        <!-- Fila -->                        
+                        <!-- Fila -->                        
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" onclick="validarRespuestas()" class="btn btn-primary">Validar respuestas</button>
+                            </div>
+                            <div class="col">
+                                <a href="actividad-1-1-5.html"><button type="button"  class="btn btn-primary">Resetear posiciones</button></a>
+                            </div>
+                        </div>
+                        <!-- Fila -->                        
+
                     </div>
 
 
-                </div>
-
-                   
+                    <p class="card-text">
+                        Es importante que sepas que esta actividad no tiene calificación, su propósito es reforzar tus conocimientos relacionados con este tema y que puedas evaluar aprendizajes adquiridos.
+                    </p>
 
 
                     <ul class="pagination justify-content-end">
@@ -173,6 +214,14 @@
                     </ul>
 
                 </div>
+
+
+                   
+
+
+                    
+
+                </div>
             </div>
 
         </section>
@@ -193,27 +242,55 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script>
-        $(document).ready(function () {
-            let draggedItem = null;
-
-            $('.draggable-item').on('dragstart', function (event) {
-                draggedItem = $(this).attr('id');
-            });
-
-            $('[droppable="true"]').on('dragover', function (event) {
-                event.preventDefault();
-            });
-
-            $('[droppable="true"]').on('drop', function (event) {
-                event.preventDefault();
-                const target = $(this).attr('id');
-                $('#' + target).html($('#' + draggedItem).text());
-            });
-        });
-
-        function validarRespuestas() {
-            alert("saludos");
+        function allowDrop(event) {
+            event.preventDefault();
         }
+    
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+    
+        function drop(event) {
+            event.preventDefault();
+            const draggedItemId = event.dataTransfer.getData("text");
+            const draggedItem = document.getElementById(draggedItemId);
+            const dropTarget = event.target;
+    
+            if (dropTarget.classList.contains("droppable-area")) {
+                dropTarget.appendChild(draggedItem);
+            }
+        }
+    
+        function validarRespuestas() {
+            const respuestasCorrectas = {
+                "respuesta1": "item1",
+                "respuesta2": "item5",
+                "respuesta3": "item2",
+                "respuesta4": "item3",
+                "respuesta5": "item6",
+                "respuesta6": "item4"
+            };
+    
+            let respuestasCorrectasContador = 0;
+            let respuestasIncorrectasContador = 0;
+    
+            for (const respuestaId in respuestasCorrectas) {
+                const respuestaDiv = document.getElementById(respuestaId);
+                const itemDiv = respuestaDiv.querySelector(".draggable-item");
+    
+                if (!itemDiv || itemDiv.id !== respuestasCorrectas[respuestaId]) {
+                    respuestasIncorrectasContador++;
+                    respuestaDiv.style.backgroundColor = "#FFC0C0"; // Cambia el color de fondo a rojo
+                } else {
+                    respuestasCorrectasContador++;
+                    respuestaDiv.style.backgroundColor = "#C0FFC0"; // Cambia el color de fondo a verde
+                }
+            }
+    
+            alert("Respuestas Correctas: " + respuestasCorrectasContador + "\nRespuestas Incorrectas: " + respuestasIncorrectasContador);
+        }
+
+
     </script>
 
 
