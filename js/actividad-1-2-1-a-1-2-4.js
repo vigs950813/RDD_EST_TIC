@@ -4,15 +4,10 @@ function checkAnswers() {
 
     function checkAnswer(questionName, correctAnswer) {
         const userInput = document.querySelector(`input[name=${questionName}]`).value.toLowerCase();
-        const feedbackElement = document.getElementById(`feedback-${questionName}`);
 
         if (userInput === correctAnswer.toLowerCase()) {
-            feedbackElement.textContent = '¡Respuesta correcta!';
-            feedbackElement.style.color = 'green';
             correctCount++;
         } else {
-            feedbackElement.textContent = 'Respuesta incorrecta.';
-            feedbackElement.style.color = 'red';
             incorrectCount++;
         }
     }
