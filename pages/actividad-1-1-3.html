@@ -56,27 +56,91 @@
                 <div class="card-body">
 
                     <p class="card-text">
-                        <b>En construcción</b>
-                    </p>
-
-
-                    <p class="card-text">
                         <b>Instrucciones</b>
                     </p>
 
+                    <p class="card-text">
+                        Reponde el siguiente cuestionario de 5 preguntas. Elige la opción de respuesta que consideres es la correcta.
+                    </p>
 
                     <p class="card-text">
-                        Elige el número de pregunta a contestar, si seleccionas la correcta, al dar clic sobre la flecha que aparece a la derecha de ¡Excelente!, regresará a la diapositiva de preguntas, si es errónea aparecerá el texto de ¡Intentarlo nuevamente!, al hacer clic sobre la flecha que aparece a su derecha, regresará a la pregunta hasta que se seleccione la respuesta correcta.
+                        Una vez que hayas terminado de seleccionar tus respuestas, puedes verificarlas dando clic en el botón Verificar respuestas.
                     </p>
+
+                    <p class="card-text">
+                        Puedes repetir la actividad las veces que considere necesario realizarla.      
+                    </p>
+                    
 
                     <p class="card-text">
                         Es importante que sepas que esta actividad no tiene calificación, su propósito es reforzar tus conocimientos relacionados con este tema y que puedas evaluar aprendizajes adquiridos.
                     </p>
 
-                    <p class="card-text">
-                        Para descargar la presentación da clic en el siguiente botón.
-                    </p>
                     
+                    <div class="question">
+                        <h2 style="font-size: 17px; font-weight: bold;">1. Las TIC permiten la adaptación de materiales y métodos de enseñanza según el ritmo y estilo de aprendizaje de cada estudiante.</h2>
+                        <input type="radio" name="q1" value="a"> a) Brecha Digital.<br>
+                        <input type="radio" name="q1" value="b"> b) Aprendizaje personalizado.<br>
+                        <input type="radio" name="q1" value="c"> c) Desigualdades en el Acceso.<br>
+                        <input type="radio" name="q1" value="d"> d) Interactividad.<br>
+                        <input type="radio" name="q1" value="e"> e) Desafíos de Evaluación.<br>
+                        <input type="radio" name="q1" value="f"> f) Retroalimentación rápida.<br>
+                    </div>
+                    <br>
+                    
+                    <div class="question">
+                        <h2 style="font-size: 17px; font-weight: bold;">2. Las plataformas en línea permiten una retroalimentación rápida, facilitando la evaluación formativa y la mejora continua.</h2>
+                        <input type="radio" name="q2" value="a"> a) Brecha Digital.<br>
+                        <input type="radio" name="q2" value="b"> b) Aprendizaje personalizado.<br>
+                        <input type="radio" name="q2" value="c"> c) Desigualdades en el Acceso.<br>
+                        <input type="radio" name="q2" value="d"> d) Interactividad.<br>
+                        <input type="radio" name="q2" value="e"> e) Desafíos de Evaluación.<br>
+                        <input type="radio" name="q2" value="f"> f) Retroalimentación rápida.<br>
+                        <!-- <span id="feedback-q2"></span> -->
+                    </div>
+                    <br>
+                    
+                    <div class="question">
+                        <h2 style="font-size: 17px; font-weight: bold;">3. No todos los estudiantes tienen acceso equitativo a dispositivos y conexiones a internet, lo que crea una brecha digital.</h2>
+                        <input type="radio" name="q3" value="a"> a) Brecha Digital.<br>
+                        <input type="radio" name="q3" value="b"> b) Aprendizaje personalizado.<br>
+                        <input type="radio" name="q3" value="c"> c) Desigualdades en el Acceso.<br>
+                        <input type="radio" name="q3" value="d"> d) Interactividad.<br>
+                        <input type="radio" name="q3" value="e"> e) Desafíos de Evaluación.<br>
+                        <input type="radio" name="q3" value="f"> f) Retroalimentación rápida.<br>
+                        <!-- <span id="feedback-q3"></span> -->
+                    </div>
+                    <br>
+                    
+                    <div class="question">
+                        <h2 style="font-size: 17px; font-weight: bold;">4. Los estudiantes de áreas con recursos limitados pueden enfrentar desafíos en el acceso a tecnologías avanzadas</h2>
+                        <input type="radio" name="q4" value="a"> a) Brecha Digital.<br>
+                        <input type="radio" name="q4" value="b"> b) Aprendizaje personalizado.<br>
+                        <input type="radio" name="q4" value="c"> c) Desigualdades en el Acceso.<br>
+                        <input type="radio" name="q4" value="d"> d) Interactividad.<br>
+                        <input type="radio" name="q4" value="e"> e) Desafíos de Evaluación.<br>
+                        <input type="radio" name="q4" value="f"> f) Retroalimentación rápida.<br>
+                        <!-- <input type="radio" name="q4" value="d"> d) Mayor modularidad y seguridad. <br> -->
+                        <!-- <span id="feedback-q4"></span> -->
+                    </div>
+                    <br>
+                    
+                    <div class="question">
+                        <h2 style="font-size: 17px; font-weight: bold;">5. Las habilidades y conocimientos pueden ser más complejos en un entorno digital y la posibilidad de trampas o plagio puede aumentar.</h2>
+                        <input type="radio" name="q5" value="a"> a) Brecha Digital.<br>
+                        <input type="radio" name="q5" value="b"> b) Aprendizaje personalizado.<br>
+                        <input type="radio" name="q5" value="c"> c) Desigualdades en el Acceso.<br>
+                        <input type="radio" name="q5" value="d"> d) Interactividad.<br>
+                        <input type="radio" name="q5" value="e"> e) Desafíos de Evaluación.<br>
+                        <input type="radio" name="q5" value="f"> f) Retroalimentación rápida.<br>
+                        <!-- <input type="radio" name="q5" value="d"> d) Controlador de dispositivos.<br> -->
+                        <span id="feedback-q5"></span>
+                    </div>
+                    <br>
+                    
+                    
+                    
+                    <button type="button" onclick="checkAnswers()" class="btn btn-primary">Validar respuestas</button>
                     
                     
                     
@@ -120,6 +184,10 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <!-- Core theme JS-->
+
+    <script src="../js/actividad-1-1-3.js">
+
+    </script>
 
 
 </body>
