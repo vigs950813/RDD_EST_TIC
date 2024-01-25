@@ -21,9 +21,15 @@
     background-color: #D2D8D6;
 }
 
+/* 
+
+Habilitar para que funcione hover en pag 1.4.2
+
 .card-img-top:hover{
+    
     background-color: #778A84;
-}
+} 
+*/
 
 
 .card-text{
