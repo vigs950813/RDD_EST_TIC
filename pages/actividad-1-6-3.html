@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Actividad 1.1.5: TIC desde la perspectiva del profesor</title>
+    <title>Actividad 1.6.3: Cuestionario de Ambientes virtuales de aprendizaje (AVA)</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap CSS-->
@@ -64,19 +64,20 @@
     <main>
         <section>
             <div class="card">
-                <h3 class="card-header">Actividad 1.1.5: Cuestionario sobre TIC desde la perspectiva del profesor</h3>
+                <h3 class="card-header">Actividad 1.6.3: Cuestionario de Ambientes virtuales de aprendizaje (AVA)</h3>
                 <div class="card-body">
 
                     <p class="card-text">
                         <b>Instrucciones</b>
                     </p>
 
+
                     <p class="card-text">
-                        Correlaciona las preguntas con la relación de respuestas arrastrando los conceptos del apartado de Item al apartado de Respuesta que consideres correcto.
+                        Correlaciona las preguntas con las respuestas, coloca en el recuadro sombreado, el número de pregunta correspondiente.
                     </p>
 
                     <p class="card-text">
-                        Puedes verificar tus respuestas dando clic en el botón Validar respuestas.
+                        Una vez que hayas terminado de seleccionar tus respuestas, puedes verificarlas dando clic en el botón Verificar respuestas.
                     </p>
 
                     <p class="card-text">
@@ -91,102 +92,122 @@
                     <div class="container">
                         <!-- Fila -->
                         <div class="row">
+                            
                             <div class="col">
                                 <b>Pregunta</b>
                             </div>
                             <div class="col">
-                                <b>Repuesta</b>
+                                <b></b>
                             </div>
                             <div class="col">
-                                <b>Item</b>
+                                <b>Respuesta</b>
                             </div>
                         </div>
                         <!-- Fila -->
                         <!-- Fila -->
                         <div class="row">
+                            <div class="col">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item1">1. Plataforma de gestión del aprendizaje que integra herramientas para la creación de contenido, seguimiento del rendimiento y personalización del aprendizaje</div>
+                            </div>
+                            
+                            <div class="col droppable-area" id="respuesta1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                             <div class="col" id="pregunta1">
-                                Acceso a una amplia variedad de recursos educativos en línea, facilitando la preparación de materiales de enseñanza
+                                iTunes U
                             </div>
-                            <div class="col droppable-area" id="respuesta1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            </div>
-                            <div class="col">
-                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item1">Recursos educativos en línea</div>
-                                
-                            </div>
+                            
                         </div>
                         <!-- Fila -->
                         <!-- Fila -->
                         <div class="row">
+                            <div class="col">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item2">2. Sistema de gestión del aprendizaje basado en la nube que ofrece herramientas de colaboración, evaluación y contenido interactivo para educadores y estudiantes</div>
+                            </div>
+                            
+                            <div class="col droppable-area" id="respuesta2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                             <div class="col" id="pregunta2">
-                                Algunos profesores y estudiantes pueden no tener acceso equitativo a dispositivos y conectividad, generando desigualdades en el aprendizaje
+                                Adobe Captivate Prime
                             </div>
-                            <div class="col droppable-area" id="respuesta2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            </div>
-                            <div class="col">
-                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item2">Brecha digital</div>
-                            </div>
+                            
                         </div>
                         <!-- Fila -->
                         <!-- Fila -->
                         <div class="row">
-                            <div class="col" id="pregunta3">
-                                Evaluaciones en línea y herramientas educativas proporcionan retroalimentación rápida, permitiendo a los profesores abordar áreas problemáticas de inmediato.
+                            <div class="col">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item3">3. Plataforma de aprendizaje social que conecta a profesores, estudiantes y padres, facilitando la comunicación, la distribución de tareas y la colaboración en línea</div>
                             </div>
+                            
                             <div class="col droppable-area" id="respuesta3" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                
                             </div>
-                            <div class="col">
-                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item3">Feedback rápido</div>
+                            <div class="col" id="pregunta3">
+                                Google Classroom
                             </div>
+                            
                         </div>
                         <!-- Fila -->
                         <!-- Fila -->
                         <div class="row">
-                            <div class="col" id="pregunta4">
-                                Puede afectar la capacidad de los profesores para enseñar sin asistencia tecnológica
+                            <div class="col">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item4">4. Herramienta de gestión del aprendizaje de Google que permite a los profesores crear aulas virtuales, asignar tareas y fomentar la colaboración en línea</div>
                             </div>
+                            
                             <div class="col droppable-area" id="respuesta4" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                
                             </div>
-                            <div class="col">
-                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item4">Dependencia tecnológica</div>
+                            <div class="col" id="pregunta4">
+                                Canvas
                             </div>
+                            
                         </div>
                         <!-- Fila -->
                         <!-- Fila -->
                         <div class="row">
-                            <div class="col" id="pregunta5">
-                                Las TIC brindan oportunidades para la incorporación de enfoques pedagógicos innovadores y herramientas interactivas.
+                            <div class="col">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item5">5. Plataforma de Apple que permite a los educadores crear cursos en línea y distribuir contenido educativo a través de su aplicación</div>
                             </div>
+                            
                             <div class="col droppable-area" id="respuesta5" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                
                             </div>
-                            <div class="col">
-                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item5">Innovación de la enseñanza</div>
+                            <div class="col" id="pregunta5">
+                                Edmodo
                             </div>
+                            
                         </div>
                         <!-- Fila -->
                         <!-- Fila -->
                         <div class="row">
-                            <div class="col" id="pregunta6">
-                                Evaluar habilidades y conocimientos en entornos digitales puede ser más complejo, y la posibilidad de trampas o plagio puede aumentar
-                            </div>
-                            <div class="col droppable-area" id="respuesta6" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                
-                            </div>
                             <div class="col">
-                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item6">Desafíos de evaluación</div>
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item6">6. Plataforma de gestión del aprendizaje de código abierto que facilita la creación de cursos en línea, evaluaciones y la interacción entre estudiantes y profesores</div>
                             </div>
+                            
+                            <div class="col droppable-area" id="respuesta6" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div class="col" id="pregunta6">
+                                Schoology
+                            </div>
+                            
                         </div>
                         <!-- Fila -->
-                        <!-- Fila -->                        
+                        <!-- Fila -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item7">7. Plataforma de aprendizaje en línea que integra funciones de gestión del aprendizaje y red social educativa, permitiendo la creación de cursos y la colaboración en línea</div>
+                            </div>
+                            
+                            <div class="col droppable-area" id="respuesta7" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                            <div class="col" id="pregunta7">
+                                Moodle
+                            </div>
+                            
+                        </div>
+                        <!-- Fila -->
+                       
                         <!-- Fila -->                        
                         <div class="row">
                             <div class="col">
                                 <button type="button" onclick="validarRespuestas()" class="btn btn-primary">Validar respuestas</button>
                             </div>
                             <div class="col">
-                                <a href="actividad-1-1-5.html"><button type="button"  class="btn btn-primary">Resetear posiciones</button></a>
+                                <a href="actividad-1-6-3.html"><button type="button"  class="btn btn-primary">Resetear posiciones</button></a>
                             </div>
                         </div>
                         <!-- Fila -->                        
@@ -201,21 +222,20 @@
 
                     <ul class="pagination justify-content-end">
                         <li class="page-item">
-                          <a class="page-link" href="introduccion.html">Regresar</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="1-1-fundamentos-de-las-tic.html">1</a></li>
-                        <li class="page-item"><a class="page-link" href="1-1-1-definicion-de-tic.html">2</a></li>
-                        <li class="page-item"><a class="page-link" href="1-1-2-caracteristicas-de-las-tic.html">3</a></li>
-                        <li class="page-item"><a class="page-link" href="1-1-3-tic-desde-la-perspectiva-del-aprendizaje-ventajas-y-desventajas.html">4</a></li>
-                        <li class="page-item"><a class="page-link" href="1-1-4-tic-desde-la-perspectiva-del-estudiante-ventajas-y-desventajas.html">5</a></li>
-                        <li class="page-item"><a class="page-link" href="1-1-5-tic-desde-la-perspectiva-del-docente-ventajas-y-desventajas.html">6</a></li>
-                        <li class="page-item"><a class="page-link" href="actividad-1-1-1.html">7</a></li>
-                        <li class="page-item"><a class="page-link" href="actividad-1-1-2.html">8</a></li>
-                        <li class="page-item"><a class="page-link" href="actividad-1-1-3.html">9</a></li>
-                        <li class="page-item"><a class="page-link" href="actividad-1-1-4.html">10</a></li>
-                        <li class="page-item active"><a class="page-link" href="actividad-1-1-5.html">11</a></li>
+                          <a class="page-link" href="1-5-tecnologias-utilixadas-en-el-turismo.html">Regresar</a>
+                        </li> 
+                        <li class="page-item"><a class="page-link" href="1-6-espacios-virtuales-de-trabajo.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="1-6-1-wikis.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="1-6-2-comunidades-virtuales.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="1-6-3-ambientes-virtuales-de-aprendizaje-ava.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="1-6-4-pagina-web.html">5</a></li>
+                        <li class="page-item"><a class="page-link" href="1-6-5-herramientas-de-aplicacion-en-linea.html">6</a></li>
+                        <li class="page-item"><a class="page-link" href="actividad-1-6.html">7</a></li>
+                        <li class="page-item"><a class="page-link" href="actividad-1-6-1.html">8</a></li>
+                        <li class="page-item"><a class="page-link" href="actividad-1-6-2.html">9</a></li>
+                        <li class="page-item active"><a class="page-link" href="actividad-1-6-3.html">10</a></li>
                         <li class="page-item">
-                          <a class="page-link" href="1-2-principales-tecnologias-de-la-informacion-y-la-comunicacion.html">Siguiente</a>
+                          <a class="page-link" href="bibliografia-y-recursos.html">Bibliografía y recursos</a>
                         </li>
                       </ul>
 
@@ -269,12 +289,14 @@
     
         function validarRespuestas() {
             const respuestasCorrectas = {
-                "respuesta1": "item1",
-                "respuesta2": "item5",
-                "respuesta3": "item2",
-                "respuesta4": "item3",
-                "respuesta5": "item6",
-                "respuesta6": "item4"
+                "respuesta1": "item5",
+                "respuesta2": "item1",
+                "respuesta3": "item4",
+                "respuesta4": "item2",
+                "respuesta5": "item3",
+                "respuesta6": "item7",
+                "respuesta7": "item6",
+                
             };
     
             let respuestasCorrectasContador = 0;
@@ -297,9 +319,8 @@
     
             alert("Respuestas Correctas: " + respuestasCorrectasContador + "\nRespuestas Incorrectas: " + respuestasIncorrectasContador);
         }
-
-
     </script>
+    
 
 
 </body>
