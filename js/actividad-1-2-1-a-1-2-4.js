@@ -13,7 +13,7 @@ function checkAnswers() {
     }
 
     checkAnswer('q1', 'correo electrónico');
-    checkAnswer('q2', 'internet');
+    checkAnswer('q2', 'www');
     checkAnswer('q3', 'navegadores');
     checkAnswer('q4', 'buscadores y metabuscadores');
 
