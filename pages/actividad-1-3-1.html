@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Actividad 1.3.1: Impacto en las organizaciones</title>
+    <title>Actividad 1.3.1: Cuestionario sobre Impacto en las organizaciones</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap CSS-->
@@ -31,6 +31,18 @@
 <script src="../js/offcanvasLoader.js"></script>
 <script src="../js/footerPagesLoader.js"></script>
 <!-- Local JS-->
+<style>
+    .draggable-item {
+        cursor: grab;
+        font-weight: bold;
+    }
+    
+    .droppable-area {
+        min-height: 50px;
+        margin-bottom: 10px;
+        background-color: #D5D5D5;
+    }
+</style>
 </head>
 
 <body>
@@ -57,105 +69,154 @@
 
                     <p class="card-text">
                         <b>Instrucciones</b>
-                    </p>    
-
-                    <p class="card-text">
-                        Escribe las palabras que den respuesta a las preguntas.
                     </p>
 
+                    <p class="card-text">
+                        Selecciona el ejemplo que corresponda con el concepto, elige alguna opción de las listadas al final de la tabla.
+                    </p>
+
+                    <p class="card-text">
+                        Una vez que hayas terminado de completar tus respuestas, puedes verificarlas dando clic en el botón Validar respuestas.
+                    </p>
+
+                    <p class="card-text">
+                        Puede reiniciar las posiciones de los items arrastrables dando clic en el botón Resetear posiciones.
+                    </p>
+
+                    <p class="card-text">
+                        Puede repetir la actividad las veces que considere necesario realizarla.
+                    </p>
 
                     <p class="card-text">
                         Es importante destacar que este cuestionario no tiene validez tanto en la calificación final como en la de cada parcial; su único propósito es servir como una herramienta de prueba para reforzar el aprendizaje que ha desarrollado hasta este punto.
                     </p>
 
 
-
                     <div class="container">
+                        <!-- Fila -->
                         <div class="row">
                             <div class="col">
-                                <b>Pregunta</b>
+                                <b>Concepto</b>
                             </div>
                             <div class="col">
-                                <b>Respuesta</b>
+                                <b>Repuesta</b>
+                            </div>
+                            <div class="col">
+                                <b>Item</b>
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
-                            <div class="col">
+                            <div class="col" id="pregunta1">
                                 Influencia en la cultura
                             </div>
-                            
+                            <div class="col droppable-area" id="respuesta1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
                             <div class="col">
-                                <input type="text" name="q1">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item1">Marketing por correo electrónico, Redes sociales</div>
+                                
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
-                            <div class="col">
+                            <div class="col" id="pregunta2">
                                 Educación en línea
                             </div>
-                            
+                            <div class="col droppable-area" id="respuesta2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
                             <div class="col">
-                                <input type="text" name="q2">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item2">Memes, contenido viral</div>
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
-                            <div class="col">
+                            <div class="col" id="pregunta3">
                                 Medios de comunicación digital
                             </div>
-                            
+                            <div class="col droppable-area" id="respuesta3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                
+                            </div>
                             <div class="col">
-                                <input type="text" name="q3">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item3">Mensajería instantánea, redes sociales, foros</div>
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
-                            <div class="col">
+                            <div class="col" id="pregunta4">
                                 Publicidad digital
                             </div>
-                            
+                            <div class="col droppable-area" id="respuesta4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                
+                            </div>
                             <div class="col">
-                                <input type="text" name="q4">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item4">Podcast, Streaming de video y audio</div>
                             </div>
                         </div>
+                        <!-- Fila -->
+                        <!-- Fila -->
                         <div class="row">
-                            <div class="col">
+                            <div class="col" id="pregunta5">
                                 Contenidos multimedia
                             </div>
-                            
+                            <div class="col droppable-area" id="respuesta5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                
+                            </div>
                             <div class="col">
-                                <input type="text" name="q5">
+                                <div class="draggable-item" draggable="true" ondragstart="drag(event)" id="item5">Plataformas E-Learning, videoconferencias</div>
                             </div>
                         </div>
-                        <div class="row">
-                            <button type="button" onclick="checkAnswers()" class="btn btn-primary">Validar respuestas</button>
+                        <!-- Fila -->                        
+                        <!-- Fila -->                        
+                        <br>
+                        <div class="row" style="border-color: transparent;">
+                            <div class="col">
+                                <button type="button" onclick="validarRespuestas()" class="btn btn-primary">Validar respuestas</button>
+                            </div>
+                            <div class="col">
+                                <a href="actividad-1-3-1.html"><button type="button"  class="btn btn-primary">Resetear posiciones</button></a>
+                            </div>
                         </div>
+                        <!-- Fila -->                        
+
                     </div>
 
                     <br>
-                
-                    <ul class="card-text">
-                        <li>Memes, contenido viral</li>
-                        <li>Mensajería instantánea, redes sociales, foros</li>
-                        <li>Plataformas E-Learning, videoconferencias</li>
-                        <li>Podcast, Streaming de video y audio</li>
-                        <li>Marketing por correo electrónico, Redes sociales</li>
-                    </ul>
 
                     
 
 
                     <ul class="pagination justify-content-end">
                         <li class="page-item">
-                          <a class="page-link" href="1-2-principales-tecnologias-de-la-informacion-y-la-comunicacion.html">Regresar</a>
+                          <a class="page-link" href="introduccion.html">Regresar</a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="1-3-las-tic-en-el-ambito-laboral.html">1</a></li>
-                        <li class="page-item"><a class="page-link" href="1-3-1-impacto-en-las-organizaciones.html">2</a></li>
-                        <li class="page-item"><a class="page-link" href="1-3-2-principales-aportaciones.html">3</a></li>
-                        <li class="page-item"><a class="page-link" href="actividad-1-3.html">4</a></li>
-                        <li class="page-item active"><a class="page-link" href="actividad-1-3-1.html">5</a></li>
-                        <li class="page-item"><a class="page-link" href="actividad-1-3-2.html">6</a></li>
+                        <li class="page-item"><a class="page-link" href="1-1-fundamentos-de-las-tic.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="1-1-1-definicion-de-tic.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="1-1-2-caracteristicas-de-las-tic.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="1-1-3-tic-desde-la-perspectiva-del-aprendizaje-ventajas-y-desventajas.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="1-1-4-tic-desde-la-perspectiva-del-estudiante-ventajas-y-desventajas.html">5</a></li>
+                        <li class="page-item"><a class="page-link" href="1-1-5-tic-desde-la-perspectiva-del-docente-ventajas-y-desventajas.html">6</a></li>
+                        <li class="page-item"><a class="page-link" href="actividad-1-1-1.html">7</a></li>
+                        <li class="page-item"><a class="page-link" href="actividad-1-1-2.html">8</a></li>
+                        <li class="page-item"><a class="page-link" href="actividad-1-1-3.html">9</a></li>
+                        <li class="page-item"><a class="page-link" href="actividad-1-1-4.html">10</a></li>
+                        <li class="page-item active"><a class="page-link" href="actividad-1-1-5.html">11</a></li>
                         <li class="page-item">
-                          <a class="page-link" href="1-4-la-comunicacion-digital.html">Siguiente</a>
+                          <a class="page-link" href="1-2-principales-tecnologias-de-la-informacion-y-la-comunicacion.html">Siguiente</a>
                         </li>
                       </ul>
+
+                </div>
+
+
+                   
+
+
+                    
+
                 </div>
             </div>
 
@@ -175,7 +236,59 @@
         crossorigin="anonymous"></script>
     <!-- Core theme JS-->
 
-    <script src="../js/actividad-1-3-1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+    
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+    
+        function drop(event) {
+            event.preventDefault();
+            const draggedItemId = event.dataTransfer.getData("text");
+            const draggedItem = document.getElementById(draggedItemId);
+            const dropTarget = event.target;
+    
+            if (dropTarget.classList.contains("droppable-area")) {
+                dropTarget.appendChild(draggedItem);
+            }
+        }
+    
+        function validarRespuestas() {
+            const respuestasCorrectas = {
+                "respuesta1": "item2",
+                "respuesta2": "item3",
+                "respuesta3": "item5",
+                "respuesta4": "item4",
+                "respuesta5": "item1",
+            };
+    
+            let respuestasCorrectasContador = 0;
+            let respuestasIncorrectasContador = 0;
+    
+            for (const respuestaId in respuestasCorrectas) {
+                const respuestaDiv = document.getElementById(respuestaId);
+                const itemDiv = respuestaDiv.querySelector(".draggable-item");
+    
+                if (!itemDiv || itemDiv.id !== respuestasCorrectas[respuestaId]) {
+                    respuestasIncorrectasContador++;
+                    // Cambia el color de fondo a rojo
+                    //respuestaDiv.style.backgroundColor = "#FFC0C0"; 
+                } else {
+                    respuestasCorrectasContador++;
+                    // Cambia el color de fondo a verde
+                    //respuestaDiv.style.backgroundColor = "#C0FFC0"; 
+                }
+            }
+    
+            alert("Respuestas Correctas: " + respuestasCorrectasContador + "\nRespuestas Incorrectas: " + respuestasIncorrectasContador);
+        }
+
+
+    </script>
 
 
 </body>
