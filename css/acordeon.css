@@ -1,0 +1,29 @@
+.accordion{
+    background-color: #F3F3F3;
+}
+
+.accordion-item{
+    background-color: #F3F3F3;
+}
+
+.accordion-button{
+    background-color: #4A635B;
+    /* background-color: #EBF4F2; */
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+
+.accordion-button:hover{
+    background-color: #E8EBEA;
+    color: black;
+}
+
+
+
+
+.accordion-body{
+    font-size: 16px;
+    text-align: justify;
+}
